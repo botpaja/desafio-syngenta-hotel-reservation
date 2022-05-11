@@ -3,21 +3,21 @@ public class HotelReservation {
     	
     	//mudar nome da variavel x
     	//separa a entrada em um array de strings
-    	String[] x = input.split(" ");
+    	String[] listaInput = input.split(" ");
     	int diasNormais = 0;
     	int fimDeSemana = 0;
     	
     	//conta os dias normais e fds na entrada
-    	for(int i=1; i<x.length; i++) {
-    		if(x[i].contains("sat") || x[i].contains("sun")) {
+    	for(int i=1; i<listaInput.length; i++) {
+    		if(listaInput[i].contains("sat") || listaInput[i].contains("sun")) {
     			fimDeSemana++;
     		}
-    		if(x[i].contains("mon") || x[i].contains("tues") || x[i].contains("wed") || x[i].contains("thur") || x[i].contains("fri")) {
+    		if(listaInput[i].contains("mon") || listaInput[i].contains("tues") || listaInput[i].contains("wed") || listaInput[i].contains("thur") || listaInput[i].contains("fri")) {
     			diasNormais++;
     		}
     	}
     	
-    	return getPriceHotel(x[0], diasNormais, fimDeSemana);
+    	return getPriceHotel(listaInput[0], diasNormais, fimDeSemana);
     }
     
     private String getPriceHotel(String tipoCliente, int diasNormais, int fimDeSemana) {
