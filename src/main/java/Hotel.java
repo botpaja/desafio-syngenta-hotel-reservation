@@ -26,18 +26,8 @@ public class Hotel {
 	}
 
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-
 	public Integer getPrecoDiaSemanaRegular() {
 		return precoDiaSemanaRegular;
-	}
-
-
-	public void setPrecoDiaSemanaRegular(Integer precoDiaSemanaRegular) {
-		this.precoDiaSemanaRegular = precoDiaSemanaRegular;
 	}
 
 
@@ -46,18 +36,8 @@ public class Hotel {
 	}
 
 
-	public void setPrecoFimDeSemanaRegular(Integer precoFimDeSemanaRegular) {
-		this.precoFimDeSemanaRegular = precoFimDeSemanaRegular;
-	}
-
-
 	public Integer getPrecoDiaSemanaReward() {
 		return precoDiaSemanaReward;
-	}
-
-
-	public void setPrecoDiaSemanaReward(Integer precoDiaSemanaReward) {
-		this.precoDiaSemanaReward = precoDiaSemanaReward;
 	}
 
 
@@ -66,22 +46,9 @@ public class Hotel {
 	}
 
 
-	public void setPrecoFimDeSemanaReward(Integer precoFimDeSemanaReward) {
-		this.precoFimDeSemanaReward = precoFimDeSemanaReward;
-	}
-
-
 	public int getEstrela() {
 		return estrela;
 	}
 
-
-	public void setEstrela(int estrela) {
-		this.estrela = estrela;
-	}
-	
-	
-	
-	
 
 }

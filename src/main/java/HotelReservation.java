@@ -36,10 +36,10 @@ public class HotelReservation {
     	}
     	
     	//chama o metodo que vai devolver o nome do hotel mais barato
-    	return getPriceHotel(listaInput[0], diasNormais, fimDeSemana);
+    	return calculateBestPriceHotel(listaInput[0], diasNormais, fimDeSemana);
     }
     
-    private String getPriceHotel(String tipoCliente, int diasNormais, int fimDeSemana) {
+    private String calculateBestPriceHotel(String tipoCliente, int diasNormais, int fimDeSemana) {
 
     	//variavel que guarda o atual menor valor e estrela do hotel
     	int atualHotelMaisBarato = Integer.MAX_VALUE;
